@@ -1,0 +1,182 @@
+[
+  {
+    "name": "晨曦侍从",
+    "side": "light",
+    "file": "assets/enemies/light-01-dawn-acolyte.png",
+    "emojiA": "1f307",
+    "emojiB": "1f31e",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20230127/u1f307/u1f307_u1f31e.png",
+    "bytes": 19734
+  },
+  {
+    "name": "白烛修女",
+    "side": "light",
+    "file": "assets/enemies/light-02-candle-nun.png",
+    "emojiA": "1f64f",
+    "emojiB": "1f31d",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20250430/u1f64f/u1f64f_u1f31d.png",
+    "bytes": 22639
+  },
+  {
+    "name": "圣纹枪兵",
+    "side": "light",
+    "file": "assets/enemies/light-03-rune-lancer.png",
+    "emojiA": "1f31f",
+    "emojiB": "2696-fe0f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20220203/u1f31f/u1f31f_u2696-ufe0f.png",
+    "bytes": 10700
+  },
+  {
+    "name": "净罪医师",
+    "side": "light",
+    "file": "assets/enemies/light-04-absolution-doctor.png",
+    "emojiA": "2705",
+    "emojiB": "1f493",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20220203/u1f493/u1f493_u2705.png",
+    "bytes": 7647
+  },
+  {
+    "name": "金环执法者",
+    "side": "light",
+    "file": "assets/enemies/light-05-gold-ring-enforcer.png",
+    "emojiA": "2696-fe0f",
+    "emojiB": "26d3-fe0f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20241021/u26d3-ufe0f/u26d3-ufe0f_u2696-ufe0f.png",
+    "bytes": 11910
+  },
+  {
+    "name": "圣歌傀儡",
+    "side": "light",
+    "file": "assets/enemies/light-06-hymn-puppet.png",
+    "emojiA": "1f3b9",
+    "emojiB": "1f916",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20240206/u1f916/u1f916_u1f3b9.png",
+    "bytes": 3817
+  },
+  {
+    "name": "辉光审判官",
+    "side": "light",
+    "file": "assets/enemies/light-07-radiant-judge.png",
+    "emojiA": "1f525",
+    "emojiB": "2696-fe0f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20231113/u1f525/u1f525_u2696-ufe0f.png",
+    "bytes": 18339
+  },
+  {
+    "name": "无瑕骑士",
+    "side": "light",
+    "file": "assets/enemies/light-08-flawless-knight.png",
+    "emojiA": "1f3c6",
+    "emojiB": "1f451",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20240610/u1f3c6/u1f3c6_u1f451.png",
+    "bytes": 22607
+  },
+  {
+    "name": "太阳代理人",
+    "side": "light",
+    "file": "assets/enemies/light-09-sun-proxy.png",
+    "emojiA": "1f31e",
+    "emojiB": "1f451",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20230127/u1f31e/u1f31e_u1f451.png",
+    "bytes": 6195
+  },
+  {
+    "name": "空座天使",
+    "side": "light",
+    "file": "assets/enemies/light-10-empty-throne-angel.png",
+    "emojiA": "1f64f",
+    "emojiB": "1f31f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20250430/u1f64f/u1f64f_u1f31f.png",
+    "bytes": 9108
+  },
+  {
+    "name": "影隙爪徒",
+    "side": "dark",
+    "file": "assets/enemies/dark-01-rift-claw.png",
+    "emojiA": "1f31a",
+    "emojiB": "1f573-fe0f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20240206/u1f573-ufe0f/u1f573-ufe0f_u1f31a.png",
+    "bytes": 15961
+  },
+  {
+    "name": "低语残魂",
+    "side": "dark",
+    "file": "assets/enemies/dark-02-whisper-ghost.png",
+    "emojiA": "1f47b",
+    "emojiB": "1f31d",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20220815/u1f47b/u1f47b_u1f31d.png",
+    "bytes": 15567
+  },
+  {
+    "name": "月蚀盗火者",
+    "side": "dark",
+    "file": "assets/enemies/dark-03-eclipse-firethief.png",
+    "emojiA": "1f31a",
+    "emojiB": "1f525",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20240206/u1f525/u1f525_u1f31a.png",
+    "bytes": 22545
+  },
+  {
+    "name": "梦魇行商",
+    "side": "dark",
+    "file": "assets/enemies/dark-04-nightmare-merchant.png",
+    "emojiA": "1f480",
+    "emojiB": "1f6d2",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20240530/u1f6d2/u1f6d2_u1f480.png",
+    "bytes": 11254
+  },
+  {
+    "name": "墓园缝合者",
+    "side": "dark",
+    "file": "assets/enemies/dark-05-grave-stitcher.png",
+    "emojiA": "1f9f5",
+    "emojiB": "1fa84",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20220815/u1fa84/u1fa84_u1f9f5.png",
+    "bytes": 7870
+  },
+  {
+    "name": "黑潮祭司",
+    "side": "dark",
+    "file": "assets/enemies/dark-06-black-tide-priest.png",
+    "emojiA": "1f30a",
+    "emojiB": "1f480",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20230418/u1f30a/u1f30a_u1f480.png",
+    "bytes": 13292
+  },
+  {
+    "name": "无眼猎手",
+    "side": "dark",
+    "file": "assets/enemies/dark-07-eyeless-hunter.png",
+    "emojiA": "1f441-fe0f",
+    "emojiB": "1f31a",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20230418/u1f441-ufe0f/u1f441-ufe0f_u1f31a.png",
+    "bytes": 13139
+  },
+  {
+    "name": "记忆食者",
+    "side": "dark",
+    "file": "assets/enemies/dark-08-memory-eater.png",
+    "emojiA": "1f9e0",
+    "emojiB": "1f47b",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20220815/u1f47b/u1f47b_u1f9e0.png",
+    "bytes": 11704
+  },
+  {
+    "name": "深渊王嗣",
+    "side": "dark",
+    "file": "assets/enemies/dark-09-abyss-heir.png",
+    "emojiA": "1f573-fe0f",
+    "emojiB": "1f451",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20201001/u1f451/u1f451_u1f573-ufe0f.png",
+    "bytes": 8477
+  },
+  {
+    "name": "终夜圣母",
+    "side": "dark",
+    "file": "assets/enemies/dark-10-endless-night-mother.png",
+    "emojiA": "1f31a",
+    "emojiB": "1f64f",
+    "source": "https://www.gstatic.com/android/keyboard/emojikitchen/20250430/u1f64f/u1f64f_u1f31a.png",
+    "bytes": 25253
+  }
+]
