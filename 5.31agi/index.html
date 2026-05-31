@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>造界炉：明暗之塔</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cosmic-backdrop" aria-hidden="true">
+      <span class="star-field"></span>
+      <span class="aura aura-light"></span>
+      <span class="aura aura-dark"></span>
+    </div>
+    <main class="game-shell" id="gameShell">
+      <section class="start-screen" id="startScreen">
+        <div class="title-block">
+          <p class="eyebrow">WorldForge: Light & Abyss</p>
+          <h1>造界炉：明暗之塔</h1>
+          <p>以词条铸卡，以卡牌越塔。选择光明或黑暗，在五层试炼中把自己的概念锻造成武器。</p>
+        </div>
+
+        <div class="how-to-play">
+          <strong>一局流程</strong>
+          <span>出牌</span>
+          <span>击败敌人</span>
+          <span>词条锻造</span>
+          <span>攀登五层</span>
+        </div>
+
+        <div class="side-picker">
+          <button class="side-card light-side" type="button" data-side="light">
+            <span class="recommend">日冕誓约</span>
+            <strong>光明力量</strong>
+            <p>以护盾、净化和审判维持秩序。稳定，锋利，像一座燃烧的圣堂。</p>
+            <small>你将挑战黑暗敌人</small>
+          </button>
+          <button class="side-card dark-side" type="button" data-side="dark">
+            <span>终夜契约</span>
+            <strong>黑暗力量</strong>
+            <p>以腐化、献祭和深渊换取爆发。危险，华美，像一场不肯醒来的梦。</p>
+            <small>你将挑战光明敌人</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="battle-screen hidden" id="battleScreen">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="runLabel">战斗</p>
+            <h2 id="stageTitle">第 1 关</h2>
+          </div>
+          <div class="run-progress" id="runProgress" aria-label="关卡进度"></div>
+        </header>
+
+        <section class="tip-panel" id="tipPanel">
+          <strong id="tipTitle">试炼目标：击败敌人</strong>
+          <span id="tipText">先看敌人下回合要做什么，再点击底部卡牌。黄色圆点是费用，能量不够的牌不能打。</span>
+        </section>
+
+        <section class="arena">
+          <aside class="status-panel player-panel">
+            <p class="panel-label">你的状态</p>
+            <h3 id="playerSideName">光明力量</h3>
+            <div class="stat-row"><span>生命</span><strong id="playerHp">72 / 72</strong></div>
+            <div class="bar"><i id="playerHpBar"></i></div>
+            <div class="stat-grid">
+              <div><span>护盾</span><strong id="playerBlock">0</strong></div>
+              <div><span>能量</span><strong id="playerEnergy">3 / 3</strong></div>
+              <div><span>腐化</span><strong id="playerCorruption">0</strong></div>
+              <div><span>牌组</span><strong id="deckCount">5</strong></div>
+            </div>
+            <p class="mini-help">护盾会抵挡伤害；腐化太高会反噬生命。</p>
+          </aside>
+
+          <section class="enemy-zone" id="enemyZone">
+            <div class="battle-sigil" aria-hidden="true"></div>
+            <div class="enemy-card">
+              <p class="eyebrow" id="enemyFaction">黑暗敌人</p>
+              <div class="enemy-portrait">
+                <img id="enemyIcon" src="" alt="" />
+              </div>
+              <h3 id="enemyName">影隙爪徒</h3>
+              <p id="enemyDesc">从裂缝里爬出的低阶猎手。</p>
+              <div class="stat-row"><span>敌人生命</span><strong id="enemyHp">30 / 30</strong></div>
+              <div class="bar enemy-bar"><i id="enemyHpBar"></i></div>
+              <div class="intent-box" id="enemyIntent">敌人下回合会攻击 6</div>
+            </div>
+          </section>
+
+          <aside class="status-panel log-panel">
+            <p class="panel-label">发生了什么</p>
+            <div class="combat-log" id="combatLog"></div>
+          </aside>
+        </section>
+
+        <section class="hand-section">
+            <div class="hand-toolbar">
+            <div>
+              <p class="eyebrow">Arcana Hand</p>
+              <h3>你的手牌</h3>
+            </div>
+            <button class="secondary-button" type="button" id="endTurnButton">结束回合</button>
+          </div>
+          <div class="hand" id="hand"></div>
+        </section>
+      </section>
+
+      <section class="forge-screen hidden" id="forgeScreen">
+        <div class="forge-layout">
+          <div class="forge-core">
+            <p class="eyebrow">WorldForge Ritual</p>
+            <h2>把词条投入造界炉</h2>
+            <p>光明词会凝成秩序，黑暗词会点燃代价。词义越强，卡牌越锋利。</p>
+
+            <label class="forge-input">
+              <span>自定义词条</span>
+              <input id="forgeTerms" type="text" placeholder="例如：太阳 守护 审判" />
+            </label>
+
+            <div class="term-chips" id="termChips">
+              <button type="button" data-term="太阳 守护">太阳 守护</button>
+              <button type="button" data-term="审判 火焰">审判 火焰</button>
+              <button type="button" data-term="月亮 记忆">月亮 记忆</button>
+              <button type="button" data-term="深渊 献祭">深渊 献祭</button>
+            </div>
+
+            <div class="score-preview">
+              <div>
+                <span>光明倾向</span>
+                <div class="meter"><i id="lightMeter"></i></div>
+              </div>
+              <div>
+                <span>黑暗倾向</span>
+                <div class="meter dark-meter"><i id="darkMeter"></i></div>
+              </div>
+            </div>
+
+            <button class="primary-button" type="button" id="forgeButton">锻造卡牌</button>
+          </div>
+
+          <div class="new-card-zone">
+            <p class="eyebrow">新卡预览</p>
+            <div id="forgedCard" class="forged-placeholder">输入词条后，点击“锻造卡牌”</div>
+            <button class="secondary-button hidden" type="button" id="continueButton">加入牌组，进入下一关</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="end-screen hidden" id="endScreen">
+        <div class="title-block">
+          <p class="eyebrow" id="endingLabel">结算</p>
+          <h2 id="endingTitle">明暗之塔已被改写</h2>
+          <p id="endingText">你的牌组完成了五次试炼。</p>
+          <div class="ending-actions">
+            <button class="primary-button" type="button" id="restartButton">再来一局</button>
+            <button class="secondary-button" type="button" id="copyDeckButton">复制牌组</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
